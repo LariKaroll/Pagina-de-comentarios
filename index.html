@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="LariKarol">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/icon.png" type="image/png">
+    <title>Comentarios</title>
+</head>
+<body>
+    <header>
+        <h1>Página de comentários</h1>
+        <hr>
+    </header>
+    <main>
+        <div class="conteiner">
+            <div class="form">
+                <form onsubmit="return false">
+                    <label>Nome:</label><br>
+                    <input type="text" placeholder="Nome do usúario" id="nome"> <br>
+                    <br>
+                    <label>Comentários:</label><br>
+                    <textarea id="comentario" placeholder="Digite aqui seu comentário" class="cmt-largura"></textarea> <br>
+                    <br><br>
+
+                    <label>Formatação: </label><br>
+                    <label>Cor do texto:</label>
+                    <input type="color" id="cor-texto" value="#16161d">
+                    <label>Cor do fundo:</label>
+                    <input type="color" id="cor-fundo" value="#ffffff"> <br>
+                    <Button onclick="comentarios();">Enviar</Button>
+                    <hr>
+                </form>
+                <!-- Resultado -->
+                <div id="result"></div>
+            </div>
+        </div>
+    </main>
+    <!-- meu js -->
+    <script src="js/scrypt.js"></script>
+</body>
+</html>
